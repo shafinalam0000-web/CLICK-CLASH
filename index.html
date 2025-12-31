@@ -5,16 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clicker Game</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js"></script>
 </head>
 <body>
-    <h1>Clicker Game</h1>
+    <!-- Login / Signup Form -->
+    <div id="loginDiv">
+        <h2>Login / Signup</h2>
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <button id="signupBtn">Sign Up</button>
+        <button id="loginBtn">Login</button>
+    </div>
 
+    <!-- Clicker Game -->
+    <h1>Clicker Game</h1>
     <button id="clickButton">CLICK</button>
     <p>Points: <span id="points">0</span></p>
 
+    <!-- Leaderboard -->
     <h2>Leaderboard</h2>
     <ol id="leaderboard"></ol>
 
+    <!-- Your JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
